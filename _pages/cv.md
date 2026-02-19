@@ -11,26 +11,27 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Robotics & Computer Vision, UPC, Spain 2013
+* Master of Advanced Studies, UPC, Spain, 2008. 
+* MSEE, Monterrey Tech (ITESM), Mexico, 2005
+* BSEE, Metropolitan Autonomous University (UAM), Mexico, 2002.
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Research Engineer 2022-Currently
+  * Scania, Sweden
+  * Autonomous Driving
+  * ...
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Research Engineer 2017-2022
+  * Zenseact, Sweden
+  * Autonomous Driving
+  * ...
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Postdoc 2016-2017
+  * Carnegie Mellon University
+  * Robotics Institute
+  * ...
   
 Skills
 ======
