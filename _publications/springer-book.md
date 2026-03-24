@@ -4,7 +4,7 @@ collection: publications
 category: book
 permalink: /publication/springer-book
 # excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-#date: 2015-10-01
+date: 2018
 #venue: 'Journal 1'
 # slidesurl: 'https://academicpages.github.io/files/slides3.pdf'
 paperurl: 'https://link.springer.com/book/10.1007/978-3-319-60603-3'
