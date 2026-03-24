@@ -19,21 +19,20 @@ Education
 Work experience
 ======
 * Research Engineer 2022-Currently
-  * Scania, Sweden
+  * TRATON (Scania), Sweden
   * Autonomous Driving
-  * ...
+
 
 * Research Engineer 2017-2022
   * Zenseact, Sweden
   * Autonomous Driving
-  * ...
+
 
 * Postdoc 2016-2017
   * Carnegie Mellon University
   * Robotics Institute
-  * ...
-  
-Skills
+
+<!-- Skills
 ======
 * Skill 1
 * Skill 2
@@ -62,4 +61,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
