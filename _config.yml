@@ -26,11 +26,11 @@ author:
   avatar           : "profile.png"
   name             : "Rafael Valencia"
   pronouns         : # example: "she/her"  
-  bio              : "R&D Engineer in Autonomous Driving"
+  bio              : "Autonomous Driving R&D Engineer"
   location         : "Stockholm, Sweden"
-  employer         : "TRATON"
-  uri              :  https://traton.com/
-  email            : "rafael.at.zen@gmail.com"
+  #employer         : "TRATON"
+  #uri              :  https://traton.com/
+  #email            : "rafael.at.zen@gmail.com"
 
   # Academic websites
   academia         : # URL
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : https://www.linkedin.com/in/rafaelvalencia
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -84,13 +84,14 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
+  book:
+    title: 'Book'
   manuscripts:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
-
+  papers:
+    title: 'Papers'
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
