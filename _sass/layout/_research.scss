@@ -32,7 +32,7 @@
 
   .research-section__body--compact {
     @include breakpoint($medium) {
-      grid-template-columns: 11rem minmax(0, 1fr);
+      grid-template-columns: 12.65rem minmax(0, 1fr);
     }
   }
 
@@ -60,11 +60,11 @@
 
   .research-section__images--logo {
     a {
-      max-width: 11rem;
+      max-width: 12.65rem;
     }
 
     img {
-      padding: 0.5rem;
+      padding: 0.575rem;
       // Preserve the official logo's dark lettering in both site themes.
       background: #fff;
       border-radius: 2px;
