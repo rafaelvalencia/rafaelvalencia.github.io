@@ -1,10 +1,17 @@
 .research-page {
   .research-section {
-    margin-top: 2.5em;
+    margin-top: 2em;
+    padding: 1.25rem;
+    border: 1px solid var(--global-border-color);
+    border-radius: 4px;
+
+    @include breakpoint($medium) {
+      padding: 1.5rem;
+    }
   }
 
   h2 {
-    margin-bottom: 1em;
+    margin: 0 0 1em;
     font-size: 1.25em;
   }
 
@@ -22,17 +29,48 @@
     }
   }
 
+  .research-section__body--compact {
+    @include breakpoint($medium) {
+      grid-template-columns: 11rem minmax(0, 1fr);
+    }
+  }
+
+  .research-section__text > :last-child {
+    margin-bottom: 0;
+  }
+
   .research-section__images {
     a {
       display: block;
       max-width: 28em;
       margin: 0 auto 1em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     img {
       display: block;
       width: 100%;
       height: auto;
+    }
+  }
+
+  .research-section__images--logo {
+    a {
+      max-width: 11rem;
+    }
+
+    img {
+      padding: 0.5rem;
+      // Preserve the official logo's dark lettering in both site themes.
+      background: #fff;
+      border-radius: 2px;
+    }
+
+    a:hover img {
+      box-shadow: none;
     }
   }
 }
