@@ -8,6 +8,16 @@ author_profile: true
 <div class="research-page">
   <p>My research has focused on different aspects of mobile robot navigation and self-driving vehicles, from perception related aspects (SLAM, Mapping, Localization, Visual Odometry) to action selection problems (path planning, exploration, planning under uncertainty, motion planning). Below you can find a brief description of my research.</p>
 
+  <section class="research-section" aria-labelledby="life-long-hd-map-change-detection-and-update">
+    <h2 id="life-long-hd-map-change-detection-and-update">Life-long HD Map Change Detection and Update</h2>
+    <div class="research-section__text">
+      <p>DeltaMap aims to shorten the time needed to keep high-definition (HD) maps up to date for autonomous driving. Creating these maps typically requires dedicated mapping vehicles and extensive post-processing. The project investigates how sensors already installed on autonomous vehicles can validate existing maps, identify changes that affect safety, and provide data and decision support for map updates.</p>
+      <p>The research focuses on detecting changes, building robust maps with commercial vehicle sensors, and validating maps automatically. The planned development progresses from a proof of concept through an offline system to a system that operates online, with the aim of using the resulting data to automate more of the map update process.</p>
+      <p>[PhD Student: <a href="https://lwildd.github.io/">Lena Wild</a>] [Academic Supervisor: <a href="https://www.kth.se/profile/patric">Patric Jensfelt</a>] [Industrial Supervisor: Rafael Valencia]</p>
+      <p>[<a href="https://strategiska.se/en/research/ongoing-research/industrial-phd-2022/project/12477/">Project page</a>]</p>
+    </div>
+  </section>
+
   <section class="research-section" aria-labelledby="visual-inertial-odometry">
     <h2 id="visual-inertial-odometry">Visual-Inertial Odometry</h2>
     <div class="research-section__body">
@@ -18,7 +28,7 @@ author_profile: true
       </div>
       <div class="research-section__text">
         <p>During my stay at CMU I collaborated in the development of a tightly-couple, fixed-lag visual-inertial odometry (VIO) framework using information sparsification. To bound computational complexity, fixed-lag smoothers typically marginalize out variables, but consequently introduce a densely connected linear prior which significantly deteriorates accuracy and efficiency. Current state-of-the-art approaches account for the issue by selectively discarding measurements and marginalizing additional variables. However, such strategies are sub-optimal from an information-theoretic perspective. Instead, our approach performs a dense marginalization step and preserves the information content of the dense prior. Our method sparsifies the dense prior with a nonlinear factor graph by minimizing the information loss. The resulting factor graph maintains information sparsity, structural similarity, and non-linearity. Our work was validated with real-time drone tests and perform comparisons to current state-of-the-art fixed-lag VIO methods in the EuRoC visual-inertial dataset. The experimental results show that the proposed method achieves competitive and superior accuracy in almost all trials.</p>
-        <p>[Hsiung et al. <a href="https://ras.papercept.net/conferences/conferences/IROS18/program/IROS18_ContentListWeb_2.html#tucts3_01">IROS&#x27;18</a> -to appear-]</p>
+        <p>[Hsiung et al. <a href="https://www.cs.cmu.edu/~kaess/pub/Hsiung18iros.html">IROS&#x27;18</a>]</p>
       </div>
     </div>
   </section>
