@@ -1,0 +1,139 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+<div class="research-page">
+  <p>My research has focused on different aspects of mobile robot navigation and self-driving vehicles, from perception related aspects (SLAM, Mapping, Localization, Visual Odometry) to action selection problems (path planning, exploration, planning under uncertainty, motion planning). Below you can find a brief description of my research.</p>
+
+  <section class="research-section" aria-labelledby="visual-inertial-odometry">
+    <h2 id="visual-inertial-odometry">Visual-Inertial Odometry</h2>
+    <div class="research-section__body">
+      <div class="research-section__images">
+        <a href="{{ '/images/research/visual-inertial-odometry.png' | relative_url }}">
+          <img src="{{ '/images/research/visual-inertial-odometry.png' | relative_url }}" alt="Drone equipped with stereo cameras and an IMU, with outdoor and indoor odometry trajectories" width="1204" height="965" loading="lazy" decoding="async">
+        </a>
+      </div>
+      <div class="research-section__text">
+        <p>During my stay at CMU I collaborated in the development of a tightly-couple, fixed-lag visual-inertial odometry (VIO) framework using information sparsification. To bound computational complexity, fixed-lag smoothers typically marginalize out variables, but consequently introduce a densely connected linear prior which significantly deteriorates accuracy and efficiency. Current state-of-the-art approaches account for the issue by selectively discarding measurements and marginalizing additional variables. However, such strategies are sub-optimal from an information-theoretic perspective. Instead, our approach performs a dense marginalization step and preserves the information content of the dense prior. Our method sparsifies the dense prior with a nonlinear factor graph by minimizing the information loss. The resulting factor graph maintains information sparsity, structural similarity, and non-linearity. Our work was validated with real-time drone tests and perform comparisons to current state-of-the-art fixed-lag VIO methods in the EuRoC visual-inertial dataset. The experimental results show that the proposed method achieves competitive and superior accuracy in almost all trials.</p>
+        <p>[Hsiung et al. <a href="https://ras.papercept.net/conferences/conferences/IROS18/program/IROS18_ContentListWeb_2.html#tucts3_01">IROS&#x27;18</a> -to appear-]</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-section" aria-labelledby="self-driving-trucks">
+    <h2 id="self-driving-trucks">Self-driving Trucks</h2>
+    <div class="research-section__body">
+      <div class="research-section__images">
+        <a href="{{ '/images/research/self-driving-truck.jpg' | relative_url }}">
+          <img src="{{ '/images/research/self-driving-truck.jpg' | relative_url }}" alt="Volvo truck fitted with research sensors, with a person standing beside it" width="1280" height="1809" loading="lazy" decoding="async">
+        </a>
+      </div>
+      <div class="research-section__text">
+        <h3>Motion planning for Heavy-duty Vehicles</h3>
+        <p>In the context of the European-funded Cargo-ANTs project, at Halmstad University we worked on motion planning techniques for Self-driving vehicles. Specifically, we focused on a Volvo FH16 Truck for efficient and safe freight transportation in main ports and freight terminals.</p>
+        <p>Similarly, in the context of the Swedish project ANTWaY we also worked in motion planning for Self-driving Trucks, but with the focus in work yards applications. We did this in collaboration with Volvo Trucks, Kollmorgen, Chalmers University and Halmstad University.</p>
+        <p><a href="http://www.cargo-ants.eu/">[Cargo-ANTs Web]</a> [<a href="http://hh.diva-portal.org/smash/record.jsf?pid=diva2%3A1137702&amp;dswid=7668">David et al. IROS&#x27;17</a>] [<a href="http://hh.diva-portal.org/smash/get/diva2:1137701/FULLTEXT01.pdf">David et al. FSR&#x27;17</a>]</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-section" aria-labelledby="localization">
+    <h2 id="localization">Localization</h2>
+    <div class="research-section__body">
+      <div class="research-section__images">
+        <a href="{{ '/images/research/dual-timescale-localization.jpg' | relative_url }}">
+          <img src="{{ '/images/research/dual-timescale-localization.jpg' | relative_url }}" alt="Autonomous forklifts operating among pallets in an industrial warehouse" width="550" height="836" loading="lazy" decoding="async">
+        </a>
+      </div>
+      <div class="research-section__text">
+        <h3>Dual-timescale NDT-MCL Localization</h3>
+        <p>Industrial environments are rarely static and often their configuration is continuously changing due to the material transfer flow. This is a major challenge for infrastructure free localization systems. In this work we addressed this challenge by introducing a localization approach that uses a dual-timescale approach. The proposed approach - Dual-Timescale Normal Distributions Transform Monte Carlo Localization (DTNDT- MCL) - is a particle filter based localization method, which simultaneously keeps track of the pose using an apriori known static map and a short-term map. The short-term map is continuously updated and uses Normal Distributions Transform Occupancy maps to maintain the current state of the environment. A key novelty of this approach is that it does not have to select an entire timescale map but rather uses the best timescale locally.</p>
+        <p>Paper: <a href="http://www.iri.upc.edu/files/scidoc/1499-Localization-in-highly-dynamic-environments-using-dual-timescale-NDT-MCL.pdf">[icra14]</a></p>
+        <p><a href="https://www.youtube.com/watch?v=aLQM6g2GeTY">[Video1]</a> Approach overview.</p>
+        <p><a href="https://www.youtube.com/watch?v=DQm55LLmvgg">[Video2]</a> Navigation with this approach.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-section" aria-labelledby="path-planning-with-slam">
+    <h2 id="path-planning-with-slam">Path planning with SLAM</h2>
+    <div class="research-section__body">
+      <div class="research-section__images">
+        <a href="{{ '/images/research/pose-slam-path-planning.png' | relative_url }}">
+          <img src="{{ '/images/research/pose-slam-path-planning.png' | relative_url }}" alt="Robot path and pose uncertainty ellipses overlaid on a colored 3D point-cloud map" width="1145" height="628" loading="lazy" decoding="async">
+        </a>
+        <a href="{{ '/images/research/pose-slam-map-overview.png' | relative_url }}">
+          <img src="{{ '/images/research/pose-slam-map-overview.png' | relative_url }}" alt="Overview of a 3D point-cloud map with a red robot trajectory" width="1160" height="871" loading="lazy" decoding="async">
+        </a>
+      </div>
+      <div class="research-section__text">
+        <p>The probabilistic belief networks that result from standard feature-based simultaneous localization and map building cannot be directly used to plan trajectories. The reason is that they produce a sparse graph of landmark estimates and their probabilistic relations, which is of little value to find collision free paths for navigation. In contrast, this work showed that Pose SLAM graphs can be directly used as belief roadmaps. We introduced a path planning approach that devises optimal navigation strategies by searching for the path in the pose graph with lowest accumulated robot pose uncertainty.</p>
+        <p>Papers: <a href="http://www.iri.upc.edu/download/scidoc/1419">[TRO-13]</a> <a href="http://www.iri.upc.edu/files/scidoc/1233-Path-planning-in-belief-space-with-Pose-SLAM.pdf">[icra11]</a></p>
+        <p>Downloads: <a href="http://www.iri.upc.edu/people/rvalenci/code/PoseSLAMplanner.tar.gz">[Code]</a> (An example with Intel dataset)</p>
+        <p><a href="https://www.youtube.com/watch?v=hA63juJ49PI">[video1]</a> (Path execution)</p>
+        <p><a href="https://www.youtube.com/watch?v=AcUZCjpONNY">[video2]</a> (Its application using 3D maps)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-section" aria-labelledby="lidar-based-slam">
+    <h2 id="lidar-based-slam">Lidar-based SLAM</h2>
+    <div class="research-section__body">
+      <div class="research-section__images">
+        <a href="{{ '/images/research/lidar-map.png' | relative_url }}">
+          <img src="{{ '/images/research/lidar-map.png' | relative_url }}" alt="3D lidar map of campus buildings with robot poses marked in blue" width="1280" height="823" loading="lazy" decoding="async">
+        </a>
+        <a href="{{ '/images/research/lidar-pose-graph.png' | relative_url }}">
+          <img src="{{ '/images/research/lidar-pose-graph.png' | relative_url }}" alt="Pose graph showing robot positions, uncertainty ellipses, and loop-closure links" width="1280" height="635" loading="lazy" decoding="async">
+        </a>
+      </div>
+      <div class="research-section__text">
+        <h3>6DOF Pose SLAM using 3D LIDAR</h3>
+        <p>This work dealt with the problem of 3D map building in urban settings for service robots, using three dimensional laser range scans as the main data input. The proposed solution consisted on the probabilistic alignment of 3D point clouds employing a 3D Pose SLAM implementation. We also introduced a technique to process the 3D volumetric maps obtained with our SLAM implementation to derive traversability maps. The datasets were acquired with a custom built 3D range scanner integrated into a mobile robot platform. The experimental site was the Barcelona Robot Lab, located at the Campus Nord of the Technical University of Catalonia, part of the European-funded project <a href="http://urus.upc.edu/">URUS</a>.</p>
+        <p>Paper: <a href="http://www.iri.upc.edu/download/scidoc/1037">[iros09]</a></p>
+        <p><a href="http://www.iri.upc.edu/people/rvalencia/videos/iros09.avi">[video]</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-section" aria-labelledby="active-slam">
+    <h2 id="active-slam">Active SLAM</h2>
+    <div class="research-section__body">
+      <div class="research-section__images">
+        <a href="{{ '/images/research/active-pose-slam.jpg' | relative_url }}">
+          <img src="{{ '/images/research/active-pose-slam.jpg' | relative_url }}" alt="Active Pose SLAM comparing exploration and revisiting actions by information gain" width="1280" height="577" loading="lazy" decoding="async">
+        </a>
+        <a href="{{ '/images/research/gaussian-process-exploration.png' | relative_url }}">
+          <img src="{{ '/images/research/gaussian-process-exploration.png' | relative_url }}" alt="Robot exploration trajectory beside a continuous Gaussian process occupancy map" width="1027" height="528" loading="lazy" decoding="async">
+        </a>
+      </div>
+      <div class="research-section__text">
+        <h3>Active Pose SLAM</h3>
+        <p>This work consisted of an active exploration strategy that complements Pose SLAM and optimal navigation in Pose SLAM. The method evaluates the utility of exploratory and place revisiting sequences and chooses the one that minimizes overall map and path entropies. An advantage of the proposed strategy with respect to competing approaches is that to evaluate information gain over the map, only a very coarse prior map estimate needs to be computed. Its coarseness is independent and does not jeopardize the Pose SLAM estimate.</p>
+        <p>Paper: <a href="http://www.iri.upc.edu/download/scidoc/1341">[iros12]</a></p>
+        <h3>Exploration with Gaussian Process-based Maps</h3>
+        <p>This work consisted of an active exploration strategy using Gaussian Process-based Maps to explore. The approach conveniently handles sparse sensor measurements to build a continuous model of the environment that exploits structural dependencies without the need to resort to a fixed resolution grid map. A gradient field of occupancy probability distribution is regressed from sensor data as a Gaussian process providing frontier boundaries for further exploration. The resulting continuous global frontier surface completely describes unexplored regions and, inherently, provides an automatic stop criterion for a desired sensitivity.</p>
+        <p>Papers: <a href="http://www.iri.upc.edu/files/scidoc/1497-Exploration-on-continuous-Gaussian-process-frontier-maps.pdf">[icra14] </a><a href="http://sertac.scripts.mit.edu/rssworkshop/wp-content/uploads/2013/06/Paper4.pdf#!">[RSS13 Workshop] </a><a href="http://www.araa.asn.au/acra/acra2013/papers/pap150s1-file1.pdf">[ACRA 2013]</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-section" aria-labelledby="visual-slam">
+    <h2 id="visual-slam">Visual SLAM</h2>
+    <div class="research-section__body">
+      <div class="research-section__images">
+        <a href="{{ '/images/research/visual-slam-robot.gif' | relative_url }}">
+          <img src="{{ '/images/research/visual-slam-robot.gif' | relative_url }}" alt="Wheeled mobile robot platform with a tall sensor mast" width="363" height="513" loading="lazy" decoding="async">
+        </a>
+      </div>
+      <div class="research-section__text">
+        <h3>Informative Loop Closure</h3>
+        <p>This work consisted of a loop closing technique to find the most informative links for Pose SLAM using stereo vision. The technique computes relative pose constraints via a robust least squares minimization of 3D point correspondences, which are in turn obtained from the matching of SIFT features over candidate image pairs. Our proposed loop closure test checks both for closeness of means and for highly informative updates at the same time.</p>
+        <p>Paper: <a href="http://www.iri.upc.edu/download/scidoc/771">[iros07]</a></p>
+      </div>
+    </div>
+  </section>
+</div>
