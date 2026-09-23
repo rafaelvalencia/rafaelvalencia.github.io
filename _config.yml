@@ -93,7 +93,7 @@ publication_category:
   papers:
     title: 'Papers'
   theses:
-    title: 'PhD Thesis'
+    title: 'PhD thesis'
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)

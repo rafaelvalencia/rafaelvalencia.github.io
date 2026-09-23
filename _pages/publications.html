@@ -9,28 +9,23 @@ author_profile: true
   <div class="wordwrap">You can also find my articles on <a href="https://scholar.google.com/citations?user=raAzOHoAAAAJ&hl=en&oi=ao">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
+{% assign publications = site.publications | sort: "date" | reverse %}
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+  {% for category in site.publication_category %}
+    {% assign category_publications = publications | where: "category", category[0] %}
+    {% if category_publications.size > 0 %}
+      <h2 class="publication-section-title">{{ category[1].title }}:</h2>
+      <ul class="publication-list">
+        {% for publication in category_publications %}
+          <li>{% include publication-citation.html publication=publication %}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+  <ul class="publication-list">
+    {% for publication in publications %}
+      <li>{% include publication-citation.html publication=publication %}</li>
+    {% endfor %}
+  </ul>
 {% endif %}
-
-
-
