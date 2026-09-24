@@ -1,0 +1,20 @@
+.cv-page {
+  h2 {
+    margin: 1.5em 0 0.65em;
+    padding-bottom: 0.35em;
+    border-bottom: 1px solid var(--global-border-color);
+    font-size: 1.1em;
+  }
+
+  p {
+    margin: 0 0 1em;
+  }
+
+  ul {
+    padding-left: 1.25em;
+  }
+
+  li {
+    margin-bottom: 0.4em;
+  }
+}

@@ -7,58 +7,39 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<div class="cv-page" markdown="1">
 
-Education
-======
-* Ph.D in Robotics & Computer Vision, UPC, Spain 2013
-* Master of Advanced Studies, UPC, Spain, 2008. 
-* MSEE, Monterrey Tech (ITESM), Mexico, 2005
-* BSEE, Metropolitan Autonomous University (UAM), Mexico, 2002.
+**Rafael Valencia, PhD**<br>
+Senior R&D Engineer · TRATON R&D (Scania) · Stockholm, Sweden
 
-Work experience
-======
-* Research Engineer 2022-Currently
-  * TRATON (Scania), Sweden
-  * Autonomous Driving
+I develop software for autonomous driving and contribute to industrial research and advanced engineering projects. My work focuses on enabling autonomous systems to estimate their own state, understand their surroundings, and make reliable decisions.
 
+## Experience
 
-* Research Engineer 2017-2022
-  * Zenseact, Sweden
-  * Autonomous Driving
+- **2022–present:** TRATON R&D / Scania — autonomous-driving software development, industrial research, and advanced engineering.
+- **2017–2022:** Zenseact / Zenuity — autonomous-driving R&D.
+- **2013–2017:** Postdoctoral research at Carnegie Mellon University, Halmstad University, and Örebro University.
 
+## Education
 
-* Postdoc 2016-2017
-  * Carnegie Mellon University
-  * Robotics Institute
+PhD in Automatics, Robotics, and Vision, Universitat Politècnica de Catalunya (UPC), Spain, 2013.
 
-<!-- Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## PhD supervision
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams -->
+[**Lena Wild**](https://lwildd.github.io/) · *2023–present*<br>
+Industrial PhD supervision, KTH / TRATON.<br>
+Road understanding and map learning for autonomous driving.
+
+[**Jennifer David**](https://jennidavid.wordpress.com/) · *Graduated 2026*<br>
+Academic PhD co-supervision, Halmstad University.<br>
+Task allocation and motion planning for mobile robots, including autonomous heavy-duty vehicles. [[Thesis](https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A2025798)]
+
+## Collaboration and opportunities
+
+I welcome academic–industry collaborations, student projects, invitations to evaluate research proposals, and conversations about future research and engineering opportunities.
+
+## Further information
+
+[LinkedIn](https://www.linkedin.com/in/rafaelvalencia/) · [Research]({{ '/research/' | relative_url }}) · [Publications]({{ '/publications/' | relative_url }})
+
+</div>
