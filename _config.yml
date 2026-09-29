@@ -23,7 +23,7 @@ repository               : "rafaelvalencia/rafaelvalencia.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "rafael-valencia.jpg"
   name             : "Rafael Valencia"
   pronouns         : # example: "she/her"  
   bio              : "Autonomous Driving R&D Engineer"
