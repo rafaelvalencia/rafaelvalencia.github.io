@@ -24,6 +24,20 @@ I develop software for autonomous driving and contribute to industrial research 
 
 PhD in Automatics, Robotics, and Vision, Universitat Politècnica de Catalunya (UPC), Spain, 2013.
 
+## Selected research projects
+
+[**World Models for End-to-End Autonomous Driving**](https://www.vinnova.se/en/p/efficient-and-generalizable-world-models-for-real-time-planning-in-autonomous-heavy-duty-trucks/) · *2026–2030*<br>
+Secured Vinnova funding; project manager at TRATON AB.<br>
+Vinnova FFI, 2026-00790 · Coordinator: TRATON AB.
+
+[**ANTWaY — Autonomous trucks for work yards**](https://www.vinnova.se/p/ANTWaY---Automated-Next-generation-Transport-Vehicle-for-Work-Yard-application/) · *2014–2017*<br>
+Principal Investigator for Halmstad University’s contribution.<br>
+Vinnova FFI, 2014-01399 · Coordinator: Volvo Technology AB.
+
+[**Cargo-ANTs — Automated freight transport in ports and terminals**](https://cordis.europa.eu/project/id/605598) · *2013–2016*<br>
+Principal Investigator for Halmstad University’s contribution.<br>
+EU FP7, grant 605598 · Coordinator: TNO.
+
 ## PhD supervision
 
 [**Lena Wild**](https://lwildd.github.io/) · *2023–present*<br>
